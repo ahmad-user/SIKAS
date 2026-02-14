@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS Role-Based - Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div id="loginPage" class="min-h-screen flex items-center justify-center p-4">
+        <div class="flex flex-col md:flex-row items-center w-full max-w-5xl bg-white rounded-2xl overflow-hidden shadow-2xl">
+            <!-- Side Image -->
+            <div class="w-full md:w-1/2 h-64 md:h-96 bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center">
+                <div class="text-center text-white">
+                    <svg class="w-24 h-24 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13 14h-1.5c-1.4 0-2.6-.9-3-.2-.4-.7-1.1-1.4-1.9-1.4H2L4 9h6.5c.4 0 .7-.3.7-.7s-.3-.7-.7-.7H4.7c.5-.7.9-1.5.9-2.3 0-2.2-1.8-4-4-4-.2 0-.4 0-.6.1C.8 1.7.2 3.8.1 6c-.1 2.8 2 5 4.9 5H7c.3 0 .5.2.5.5S7.3 12 7 12H4.9c-1.3 0-2.5.9-3 2.2-.5 1.3.1 2.7 1.4 3.4 1.3.7 2.9.2 3.6-.9.2-.3.5-.5.9-.4s.7.3.7.6c0 1.7-1.3 3.1-2.9 3.3h-.3c-.6 0-1.1-.5-1.1-1.1s.5-1.1 1.1-1.1h.3c.7 0 1.3-.5 1.3-1.2 0-.7-.6-1.2-1.3-1.2-.3 0-.6.2-.7.4-.4.7-1.1 1.2-1.9 1-1.3-.3-2.2-1.3-2.4-2.6-.2-1.3.4-2.6 1.6-3.2 1.2-.6 2.7-.1 3.3.9h.1c.3 0 .6-.2.6-.6s-.3-.6-.6-.6H11.5c-1.5 0-2.8.8-3.4 2.1-.6 1.3-.2 2.9 1.1 3.7.7.4 1.5.3 2.1-.1.3-.2.4-.5.4-.8 0-.6-.4-1-.9-1.1z"/>
+                    </svg>
+                    <h2 class="text-2xl font-semibold">Welcome Back</h2>
+                    <p class="text-blue-100 mt-2">Sign in to your account</p>
+                </div>
+            </div>
+            <!-- Login Form -->
+            <div class="w-full md:w-1/2 p-8 md:p-12">
+                <div class="login-form bg-white rounded-lg p-8">
+                    <h1 class="text-2xl font-bold mb-1 text-gray-800 text-center">Login</h1>
+                    <p class="text-sm text-gray-600 mb-6 text-center">Enter your credentials to continue</p>
+
+                    <div class="mb-4">
+                        <input id="username" class="login-input w-full px-4 py-3 rounded-lg focus:outline-none" placeholder="Username" required>
+                    </div>
+                    <div class="mb-6">
+                        <input id="password" class="login-input w-full px-4 py-3 rounded-lg focus:outline-none" placeholder="Password" type="password" required>
+                    </div>
+
+                    <button id="loginBtn" onclick="login()"
+                        class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-4 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition duration-200 transform hover:scale-105">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/login.js"></script>
+</body>
+</html>
